@@ -3,12 +3,16 @@ import {View, Text, StyleSheet} from 'react-native';
 import {Provider} from 'react-redux';
 import store from './src/redux/store';
 import CakeContainer from './src/components/CakeContainer';
+import HooksCakeContainer from './src/components/HooksCakeContainer';
+import IceCreamContainer from './src/components/IceCreamContainer';
 
 const App = () => {
   return (
     <Provider store={store}>
       <View style={styles.rootContainer}>
         <CakeContainer />
+        <HooksCakeContainer />
+        <IceCreamContainer />
       </View>
     </Provider>
   );

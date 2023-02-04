@@ -15,7 +15,7 @@ const CakeContainer = props => {
 //To access state in component
 const mapStateToProps = state => {
   return {
-    numOfCakes: state.numOfCakes,
+    numOfCakes: state.cake.numOfCakes,
   };
 };
 
